@@ -5,7 +5,7 @@
 }
 .about_monkees{
 	font-family: Verdana;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: justify;
 }
 .box1 {
@@ -24,4 +24,5 @@
 
 footer {
 	display: block;
+	height: 200px;
 }

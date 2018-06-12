@@ -2,6 +2,7 @@
 
 angular.module('myApp', ['ngRoute', 'uiGmapgoogle-maps', 'myApp.Controllers'])
 
+//Old Map handler - doesn't work after pushing to github pages
 .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
       //key: 'your api key',
@@ -10,6 +11,8 @@ angular.module('myApp', ['ngRoute', 'uiGmapgoogle-maps', 'myApp.Controllers'])
     });
   })
 
+
+//These route providers will handle redirects and navigation
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
   		.when('/home', {
@@ -33,10 +36,6 @@ angular.module('myApp', ['ngRoute', 'uiGmapgoogle-maps', 'myApp.Controllers'])
         controller: 'scheduleCtrl'
       })
 
-
+      //default redirect to home page
   		.otherwise({redirectTo: '/home'}); 
 }]);
-
-//.controller('Stream1Ctrl', ['$scope', 'firebaseArray', function($scope, $firebaseArray) {
-//.controller('Stream1Ctrl', ['$scope', function($scope) {
-

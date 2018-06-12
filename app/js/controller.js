@@ -1,5 +1,6 @@
 angular.module('myApp.Controllers',[])
 
+//Here we define each Controller used in app.js
 .controller('HomeCtrl', function($scope) {
   $scope.title = "Welcome To The Monkees";
 })
@@ -20,6 +21,7 @@ angular.module('myApp.Controllers',[])
 })
 
 
+//Firebase controller, however the project is now deployed onto Github Pages
 .controller('Stream1Ctrl', ['$scope', 'firebase', function($scope, $firebase) {
 	var ref = new Firebase('https://project1-a5f4c.firebaseio.com/'); 
 
