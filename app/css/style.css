@@ -21,3 +21,9 @@
 .angular-google-map-container {
   height: 400px;
 }
+
+footer {
+	display: block;
+	height: 200px;
+	margin-top: 300px;
+}
