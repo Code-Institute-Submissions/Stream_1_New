@@ -26,3 +26,9 @@ footer {
 	display: block;
 	height: 200px;
 }
+
+
+.footerp {
+	font-size: 12px;
+	text-align: right;
+}
